@@ -1,0 +1,142 @@
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;  /* Font style for the page */
+  text-align: center;  /* Center text */
+  padding: 20px;  /* Add space around the content */
+  background: #121212;  /* Dark background color */
+  color: #e0e0e0;  /* Light text color for contrast */
+  overflow: hidden;  /* Prevent content overflow */
+}
+
+/* Header styling */
+h1 {
+  font-size: 3em;  /* Large font size */
+  margin-bottom: 20px;  /* Space below the header */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Subtle text shadow */
+}
+
+/* Container for the typing area */
+.typing-area {
+  margin: 20px auto;  /* Center the area */
+  padding: 30px;  /* Add padding inside */
+  width: 90%;  /* Responsive width */
+  max-width: 700px;  /* Max width */
+  background: #1e1e1e;  /* Dark background */
+  border-radius: 15px;  /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  /* Shadow for depth */
+}
+
+/* Text that the user needs to type */
+.text-to-type {
+  font-size: 22px;  /* Font size for the text */
+  margin-bottom: 15px;  /* Space below the text */
+  line-height: 1.8;  /* Line height for readability */
+  letter-spacing: 0.5px;  /* Slight letter spacing */
+  color: #bdbdbd;  /* Light grey color for the text */
+}
+
+/* Styling for the progress bar */
+.progress-bar {
+  width: 100%;  /* Full width of the container */
+  background: #333;  /* Dark background for the bar */
+  height: 12px;  /* Height of the bar */
+  border-radius: 6px;  /* Rounded corners */
+  overflow: hidden;  /* Prevent overflow of inner elements */
+  margin-bottom: 20px;  /* Space below the bar */
+}
+
+/* Inner progress bar element */
+.progress-bar-inner {
+  height: 100%;  /* Full height */
+  width: 0;  /* Initial width (0%) */
+  background: linear-gradient(90deg, #4caf50, #8bc34a);  /* Green gradient */
+  transition: width 0.2s ease;  /* Smooth width transition */
+}
+
+/* Input box for typing */
+.input-box {
+  width: 100%;  /* Full width of the container */
+  padding: 15px;  /* Add padding inside */
+  font-size: 18px;  /* Font size for input */
+  border: none;  /* Remove border */
+  border-radius: 10px;  /* Rounded corners */
+  outline: none;  /* Remove focus outline */
+  background: #262626;  /* Dark background */
+  color: #fff;  /* White text */
+  margin-bottom: 15px;  /* Space below the input */
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4);  /* Inner shadow for depth */
+}
+
+/* Focused state for input box */
+.input-box:focus {
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.3);  /* Glow effect on focus */
+}
+
+/* Stats display section */
+.stats {
+  margin-top: 20px;  /* Space above the stats */
+  font-size: 18px;  /* Font size for stats */
+  color: #bdbdbd;  /* Light grey color */
+}
+
+/* Restart button styling */
+.btn-restart {
+  margin-top: 20px;  /* Space above the button */
+  padding: 15px 30px;  /* Padding inside the button */
+  font-size: 18px;  /* Font size */
+  color: #fff;  /* White text */
+  background: #e74c3c;  /* Red background */
+  border: none;  /* Remove border */
+  border-radius: 10px;  /* Rounded corners */
+  cursor: pointer;  /* Change cursor to pointer */
+  transition: background 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+}
+
+/* Hover state for restart button */
+.btn-restart:hover {
+  background: #c0392b;  /* Darker red on hover */
+  transform: scale(1.1);  /* Slightly enlarge button */
+}
+
+/* Keyboard grid container */
+.keyboard {
+  display: grid;  /* Use grid layout */
+  grid-template-columns: repeat(10, 1fr);  /* 10 columns in grid */
+  gap: 8px;  /* Space between keys */
+  margin: 20px auto;  /* Center the keyboard */
+  max-width: 700px;  /* Max width */
+}
+
+/* Individual keys on the virtual keyboard */
+.key {
+  padding: 12px;  /* Padding inside the key */
+  text-align: center;  /* Center the text */
+  font-size: 16px;  /* Font size for the key text */
+  border-radius: 5px;  /* Rounded corners */
+  background: #333;  /* Dark background */
+  color: #bdbdbd;  /* Light grey text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow for depth */
+  transition: background 0.2s ease, transform 0.2s ease;  /* Smooth transitions */
+}
+
+/* Active state for pressed keys */
+.key.active {
+  background: #4caf50;  /* Green background */
+  transform: scale(1.1);  /* Slightly enlarge key */
+}
+
+/* Circular timer display */
+.timer-circle {
+  margin: 20px auto;  /* Center the timer */
+  height: 100px;  /* Height of the circle */
+  width: 100px;  /* Width of the circle */
+  border-radius: 50%;  /* Make it a circle */
+  background: conic-gradient(#4caf50 0% 100%, #333 100%);  /* Circular progress */
+  display: flex;  /* Flexbox for centering text */
+  align-items: center;  /* Vertically center text */
+  justify-content: center;  /* Horizontally center text */
+  font-size: 22px;  /* Font size for the timer text */
+  font-weight: bold;  /* Bold font */
+  color: #fff;  /* White text color */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);  /* Shadow for depth */
+}

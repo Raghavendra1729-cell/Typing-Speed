@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Typing Speed Test</h1>
+  <div class="typing-area">
+    <!-- Text to type and progress bar -->
+    <div class="text-to-type" id="text-to-type"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-inner" id="progress-bar-inner"></div>
+    </div>
+    
+    <!-- Input box for typing -->
+    <input type="text" class="input-box" id="input-box" placeholder="Start typing here...">
+    
+    <!-- Stats display -->
+    <div class="stats">
+      <div class="timer-circle" id="timer-circle">15</div>
+      <p>Words per Minute: <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="accuracy">100</span>%</p>
+      <p>Total Characters Typed: <span id="chars-typed">0</span></p>
+    </div>
+    
+    <!-- Restart button -->
+    <button class="btn-restart" onclick="restartTest()">Restart</button>
+  </div>
+  
+  <!-- Keyboard visualization (optional) -->
+  <div class="keyboard" id="keyboard"></div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="scripts.js"></script>
+</body>
+</html>
